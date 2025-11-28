@@ -1,6 +1,6 @@
 """
 Weather Data Visualizer - Programming for Problem Solving Assignment
-Student: [Your Name]
+Student: Kartik Sharma
 Dataset: Daily Delhi Climate (Kaggle) [https://www.kaggle.com/datasets/sukhmandeepsinghbrar/daily-delhi-climate](https://www.kaggle.com/datasets/sukhmandeepsinghbrar/daily-delhi-climate)
 """
 
@@ -30,7 +30,6 @@ def clean_data(df):
     df['date'] = pd.to_datetime(df['date'])
     df = df.dropna()
     
-    # ✅ FIXED: Use actual column names from your dataset
     relevant_cols = ['date', 'meantemp', 'humidity', 'wind_speed', 'meanpressure']
     df = df[relevant_cols]
     df.set_index('date', inplace=True)
@@ -100,7 +99,7 @@ def main():
     
     DATA_FILE = 'delhi_weather.csv'
     
-    if not os.path.exists(DATA_FILE):  # ✅ Now os works!
+    if not os.path.exists(DATA_FILE):  
         print(f"❌ ERROR: {DATA_FILE} not found!")
         print("1. Download from: https://www.kaggle.com/datasets/sukhmandeepsinghbrar/daily-delhi-climate")
         print("2. Save as 'delhi_weather.csv' in this folder")
@@ -115,3 +114,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
