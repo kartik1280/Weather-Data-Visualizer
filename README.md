@@ -90,7 +90,7 @@ weather-data-visualizer-yourname/
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=flat&logo=matplotlib&logoColor=white)
 
 ## 📄 License
-This project is for **academic submission only**. Cite dataset source in your report.
+This project is for **academic submission only**. 
 
 ---
 
